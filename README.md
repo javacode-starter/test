@@ -42,7 +42,7 @@ curl http://localhost:8080/index/add \
 
 1. git clone 获取代码
 2. git commit / git push 提交代码变更
-3. git checkout 切换分支
+3. git checkout 切换分支到 dev
 
 
 ### maven 练习
@@ -62,9 +62,10 @@ curl http://localhost:8080/index/add \
 1. 使用 curl 调用接口
 
 ### 开发练习
+> 注意：你提交的代码必须在dev分支
 
 ##### PART 1：
-
+ 
 1. 对 Person 类添加身高、体重的属性，身高为浮点型、体重为整型。
 2. 新增 1个 GET 接口，要求返回 年龄：20；姓名：李晨；身高：180.3；体重：20。
 

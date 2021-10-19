@@ -7,7 +7,7 @@ package com.shujiu.test.dto;
  * <p>
  * getXX setXX 方法是 Java 的标准，所有属性应该有 get/set 方法
  *
- * @author shujiu.cl
+ * @author 交藤
  * @since 2021/10/19
  */
 public class Person {
