@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.shujiu.test.dao.PersonDAO">
+
+    <resultMap id="PersonResultMap" type="com.shujiu.test.dto.Person">
+        <result property="name" column="name"/>
+        <result property="age" column="age"/>
+        <result property="id" column="id"/>
+    </resultMap>
+
+    <insert id="insert" parameterType="com.shujiu.test.dto.Person" useGeneratedKeys="true" keyProperty="id">
+        insert into tb_person(name, age)
+        values (#{name}, #{age})
+    </insert>
+
+    <select id="get" parameterType="java.lang.Long" resultMap="PersonResultMap">
+        select *
+        from tb_person
+        where id = #{id}
+    </select>
+</mapper>

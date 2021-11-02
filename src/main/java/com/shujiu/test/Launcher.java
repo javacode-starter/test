@@ -1,12 +1,15 @@
 package com.shujiu.test;
 
+import org.mybatis.spring.boot.autoconfigure.MybatisAutoConfiguration;
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.ImportAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
  * @author 交藤
  * @since 2021/10/19
  */
+@ImportAutoConfiguration(MybatisAutoConfiguration.class)
 @SpringBootApplication
 public class Launcher {
 
